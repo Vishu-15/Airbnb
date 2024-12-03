@@ -1,0 +1,26 @@
+<% layout('/layouts/boilerplate') -%>
+<body>
+    <h3>All Listings here!</h3>
+    <!-- <form action="/listings/new" method="GET">
+        <button>ADD</button>
+    </form> -->
+    
+    <div class="row row-cols-3 row-cols-md-2 r-cols-sm-1 g-4">
+        <%for(listing of allListings){%>
+            <div class="card listing-card">
+                <a class="listing-link" href="/listings/<%=listing._id%>">
+                    <img src="<%= listing.image.url %>" class="card-img-top" alt="destination image">
+                    <div class="card-img-overlay">
+                        <p class="card-text"><small></small></p>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text"><b><%=listing.title%></b></p>
+                    </div>
+                    <div class="listing-location"><%=listing.location%> , <%=listing.country%></div>
+                    <div class="list-price"> &#8377;<%=listing.price%> / night</div>
+                </a>
+            </div>
+        <%}%>
+    </div>
+
+</body>

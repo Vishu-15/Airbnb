@@ -1,0 +1,107 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+
+.container{
+    flex:1;
+}
+
+.navbar{
+    height:5rem;
+    background-color:white;
+}
+
+.fa-compass{
+    font-size: 2rem;
+    color:red;
+}
+
+.nav-link{
+    color:#222222 !important;
+}
+
+/* footer */
+
+.f-info{
+    /* height:8rem; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#ebebeb;
+    margin-top:1rem;
+}
+
+.f-info-socials,
+.f-info-brands,
+.f-info-links{
+    padding:1.1rem;
+}
+
+.f-info-socials{
+    font-size: 1.2rem;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color:#222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.listing-card{
+    width:20rem !important;
+    border:none !important;
+    padding:0 !important;
+    margin:1rem;
+}
+
+.listing-link{
+    text-decoration: none;
+    color:#222222;
+}
+
+.card-img-top{
+    height:15rem;
+    width:100%;
+    border-radius: 1.2rem !important;
+    margin-bottom: 0.8rem;
+}
+
+.card-body{
+    padding:0 !important;
+}
+
+.card-img-overlay{
+    opacity:0;
+}
+
+.card-img-overlay:hover{
+    opacity:0.2;
+    background-color: #ebebeb;
+}
+
+/* show route */
+.show-image{
+    width:30rem !important;
+    height:20rem !important;
+}
+
+.show-buttons{
+    display:flex;
+    /* justify-content: center; */
+}
+
+.show-btn{
+    margin:1rem !important;
+}
